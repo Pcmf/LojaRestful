@@ -1,0 +1,27 @@
+# Turn rewrite engine on
+RewriteEngine on
+
+#POST do LOGIN 
+#RewriteRule ^auth/([0-9a-zA-z$./]+) restful/restful.php?url=auth&token=$1 [L,QSA]
+RewriteRule ^artigo/([0-9]+) index.php?url=artigo&id=$1 [L,QSA]
+RewriteRule ^artigo index.php?url=artigo [L,QSA]
+RewriteRule ^categorias/([0-9]+) index.php?url=categoria&id=$1 [L,QSA]
+RewriteRule ^categorias index.php?url=categoria [L,QSA]
+RewriteRule ^familias/([0-9]+) index.php?url=familia&id=$1 [L,QSA]
+RewriteRule ^familias index.php?url=familia [L,QSA]
+RewriteRule ^clientes/([0-9]+) index.php?url=cliente&id=$1 [L,QSA]
+RewriteRule ^clientes index.php?url=cliente [L,QSA]
+RewriteRule ^cores/([0-9]+) index.php?url=cor&id=$1 [L,QSA]
+RewriteRule ^cores index.php?url=cor [L,QSA]
+RewriteRule ^fornecedor/([0-9]+) index.php?url=fornecedor&id=$1 [L,QSA]
+RewriteRule ^fornecedor index.php?url=fornecedor [L,QSA]
+RewriteRule ^paises/([0-9]+) index.php?url=pais&id=$1 [L,QSA]
+RewriteRule ^paises index.php?url=pais [L,QSA]
+RewriteRule ^stock/([0-9]+)/([0-9]a-zA-Z+)/([0-9]a-zA-Z+) index.php?url=stock&artigo=$1&cor=$2&tamanho=$3 [L,QSA]
+RewriteRule ^stock index.php?url=stock [L,QSA]
+RewriteRule ^tamanho/([0-9]+) index.php?url=tamanho&id=$1 [L,QSA]
+RewriteRule ^tamanho index.php?url=tamanho [L,QSA]
+RewriteRule ^tipocliente/([0-9]+) index.php?url=tipocliente&id=$1 [L,QSA]
+RewriteRule ^tipocliente index.php?url=tipocliente [L,QSA]
+
+
